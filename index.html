@@ -30,6 +30,11 @@
       p {
         font-size: 1.1rem;
         line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        text-align: left;
         margin-bottom: 32px;
       }
 
@@ -52,16 +57,58 @@
         font-size: 0.9rem;
         color: #777;
       }
+
+      /* Dark Mode */
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #121212;
+          color: #e0e0e0;
+        }
+
+        .container {
+          background-color: #1e1e1e;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        p, ul {
+            color: #bbbbbb;
+        }
+
+        a.download-button {
+          background-color: #0070f3;
+          color: #ffffff;
+        }
+
+        a.download-button:hover {
+          background-color: #0059c1;
+        }
+
+        footer {
+            color: #888888;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <h1>D424 Capstone "My Vacation Planner"</h1>
 
-      <p>My Vacation Planner is an Android Mobile app created for the 
-        WGU D424 Software Engineering Capstone. This app allows users to track and plan vacations and excursions all in one place.
-        Users can create, edit and view vacations and associated excursion. Users can also create reminders for these events as well as share the details via SMS or email.
+      <p>
+        My Vacation Planner is an Android mobile app developed for the WGU D424 Software Engineering Capstone. 
+        This application helps users track and organize their vacations and excursions in one convenient place.
       </p>
+
+      <h2>Features</h2>
+      <ul>
+        <li>Create, edit, and view vacation details.</li>
+        <li>Manage excursions associated with each vacation.</li>
+        <li>Set reminders for upcoming events.</li>
+        <li>Share vacation and excursion details via SMS or email.</li>
+      </ul>
 
       <a
         class="download-button"
